@@ -1,0 +1,357 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .hidden.menu {
+    display: none;
+  }
+
+  .masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+  }
+
+  .masthead .logo.item img {
+    margin-right: 1em;
+  }
+
+  .masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+  }
+
+  .masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+  }
+
+  .masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+  }
+
+  .ui.vertical.stripe {
+    padding: 8em 0em;
+  }
+
+  .ui.vertical.stripe h3 {
+    font-size: 2em;
+  }
+
+  .ui.vertical.stripe .button+h3,
+  .ui.vertical.stripe p+h3 {
+    margin-top: 3em;
+  }
+
+  .ui.vertical.stripe .floated.image {
+    clear: both;
+  }
+
+  .ui.vertical.stripe p {
+    font-size: 1.33em;
+  }
+
+  .ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+  }
+
+  .quote.stripe.segment {
+    padding: 0em;
+  }
+
+  .quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .footer.segment {
+    padding: 5em 0em;
+  }
+
+  .secondary.pointing.menu .toc.item {
+    display: none;
+  }
+
+  @media only screen and (max-width: 700px) {
+
+    .secondary.pointing.menu .toc.item {
+      display: block;
+    }
+
+    .masthead.segment {
+      min-height: 350px;
+    }
+
+    .masthead h1.ui.header {
+      font-size: 2em;
+      margin-top: 1.5em;
+    }
+
+    .masthead h2 {
+      margin-top: 0.5em;
+      font-size: 1.5em;
+    }
+
+  }
+
+  .ui.large.secondary.pointing.menu {
+    border: none;
+  }
+
+  .ui.vertical.masthead.center.aligned.segment {
+    border: none;
+  }
+
+  .ui.large.top.fixed.hidden.menu {}
+
+  .ui.menu .item {
+    border: none;
+    position: static;
+  }
+
+  .ui.large.secondary.pointing.menu {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000000;
+    margin-top: 0px;
+    top: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  }
+
+  .ui.menu .item>i.icon {
+    margin-bottom: 15px;
+  }
+
+  #title-1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+
+  #title-2 {
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+
+  .ui.vertical.masthead.aligned.segment {
+
+    margin: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  ui.text.container {
+    max-width: 950px;
+  }
+
+  .section-acervos {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+
+
+  }
+
+  #title-acervos {
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  @media only screen and (max-width: 700px) {
+
+    .right.item {
+      visibility: hidden;
+    }
+
+    .section-acervos {
+      text-align: left;
+    }
+
+    .ui.text.container {
+      margin-top: 120px;
+    }
+
+    .ui.large.icon.input {
+      width: 380px;
+    }
+
+    #title-acervos {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    #subtitulo-secao {
+      margin-top: 0px;
+    }
+
+    .cards-content-line {
+      text-align: center;
+    }
+
+    #card-tema {
+      display: inline-block;
+      margin-left: 30px;
+      height: 250px;
+    }
+
+    .bibliotecas-publicas-section {
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+
+      text-align: left;
+
+    }
+
+    .exposicoes-div {
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+
+      text-align: left;
+    }
+
+    .conheca-div {
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+
+      text-align: left;
+    }
+
+    .bibliotecas-mundo-div {
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+
+      text-align: left;
+    }
+
+    .div-textos {
+      padding-left: 25px;
+    }
+
+    .card-horizontal-unico {
+      padding-left: 25px;
+      padding-right: 15px;
+    }
+
+  }
+
+  @media only screen and (min-width: 700px) {
+
+    .section-acervos {
+      text-align: center;
+    }
+
+    .ui.large.icon.input {
+      width: 560px;
+    }
+
+    #title-acervos {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    #subtitulo-secao {
+      margin-top: 0px;
+    }
+
+    .cards-content-line {
+      margin: auto;
+      text-align: center;
+    }
+
+    #card-tema {
+      display: inline-block;
+      margin-left: 45px;
+      height: 250px;
+    }
+
+    .bibliotecas-publicas-section {
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    .exposicoes-div {
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    .conheca-div {
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    .bibliotecas-mundo-div {
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+
+    }
+
+  }
+
+  #title-1 {}
+
+  .ui.link.card {
+    width: 180px;
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: -25px;
+
+  }
+
+  .card-horizontal-unico {
+
+    margin: auto;
+    padding-top: 152px;
+    transition: 0.3s;
+    padding-bottom: 152px;
+    background-color: #ebebeb;
+
+  }
+
+  .titulo-card-unico {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+  }
+
+  .card-horizontal-unico:hover {
+    cursor: pointer;
+    border: white;
+    background-color: rgb(221, 221, 221);
+  }
+
+  .btn-ver-mais {
+    background-color: none;
+    border: none;
+    padding: 15px;
+    border-radius: 55px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .btn-ver-mais:hover {
+    cursor: pointer;
+    background-color: #d4d4d5;
+
+  }
+
+  .div-btn-ver-mais {
+
+    text-align: center;
+  }
+
+  .media-icons {
+    max-width: 20px;
+    max-height: 20px;
+    display: inline-block;
+  }
+
+  .foot-2 {
+    text-align: center;
+  }
+  
