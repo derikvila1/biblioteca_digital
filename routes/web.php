@@ -14,6 +14,8 @@ use App\Controller\VisitaController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [App\Http\Controllers\Controller::class, 'index'])
+    ->name('home');
 
 Route::get('/home', [App\Http\Controllers\Controller::class, 'index'])
     ->name('home');

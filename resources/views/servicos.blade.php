@@ -271,7 +271,7 @@
 
                 <div class="field">
                   <label>Estado</label>
-                  <select class="ui dropdown" name="gender">
+                  <select class="ui dropdown" name="state">
                     <option> Acre - AC</option>
                     <option> Alagoas - AL</option>
                     <option> Amapá - AP</option>
@@ -417,7 +417,7 @@
                 </div>
               </div>-->
 
-              <div class="ui primarybutton">Finalizar Solicitação</div>
+              <button type="submit" class="ui primarybutton">Finalizar Solicitação</button >
               <div class="ui error message"></div>
             </form>
             <br><br>
@@ -428,7 +428,7 @@
 
          
 
-          <form class="ui form segment">
+          <form method="post" id="formVisita" action="{{ route('visita.store') }}" class="ui form segment">
             <h1 id="title-1">Solicitação de Visita Técnica</h1>
             <p>O Centro de Documentação e Memória dos Povos da Amazônia tem por objetivo o resgate e preservação dos
               acervos documentais históricos e difundi-los no principal canal de divulgação que é o site da Biblioteca
@@ -436,34 +436,34 @@
               técnica aos bastidores.
             </p>
             <br>
-            <div class="three fields">
-              <div class="field">
+            <div class="two fields">
+              <!-- <div class="field">
                 <label>Nome</label>
                 <div class="ui transparent input">
                   <input name="name" type="text">
                 </div>
-              </div>
+              </div> -->
 
               <div class="field">
-                <label>Instituição</label>
-                <div class="ui transparent input">
-                  <input placeholder="bleble" name="username" type="text">
+                  <label>Instituição</label>
+                  <div class="ui transparent input">
+                    <input placeholder="Instituiçao" name="institution" id="institution" type="text">
+                  </div>
                 </div>
-              </div>
 
-              <div class="field">
-                <label>Profissão</label>
-                <div class="ui transparent input">
-                  <input name="password" type="password">
+                <div class="field">
+                  <label>Profissão</label>
+                  <div class="ui transparent input">
+                    <input name="profession" id="profession" type="text">
+                  </div>
                 </div>
-              </div>
 
             </div>
             <div class="three fields">
 
               <div class="field">
                 <label>Estado</label>
-                <select class="ui dropdown" name="gender">
+                <select class="ui dropdown" name="state">
                   <option> Acre - AC</option>
                   <option> Alagoas - AL</option>
                   <option> Amapá - AP</option>
@@ -497,51 +497,51 @@
               </div>
 
               <div class="field">
-                <label>Cidade</label>
-                <select class="ui dropdown" name="gender">
-                  <option value="">Cidade</option>
-                  <option value="male">Manaus</option>
-                  <option value="female">Belo Horizonte</option>
-                </select>
-              </div>
-
-              <div class="field">
-                <label>Telefone</label>
-                <div class="ui transparent input">
-                  <input name="telefone" type="text">
+                  <label>Cidade</label>
+                  <div class="ui transparent input">
+                    <input name="city" id="city" type="text">
+                  </div>
+                  
                 </div>
-                <small id="description-pequena" class="form-text text-muted"
-                  style="font-family: Montserrat, sans-serif">Inserir DDD. Ex: 92992007890</small>
-              </div>
+
+                <div class="field">
+                  <label>Telefone</label>
+                  <div class="ui transparent input">
+                    <input name="cellphone" id="cellphone" type="text" require>
+                  </div>
+                  <small id="description-pequena" class="form-text text-muted"
+                    style="font-family: Montserrat, sans-serif">Inserir DDD. Ex: 92992007890</small>
+                </div>
 
 
             </div>
 
 
-            <div class="three fields">
-              <div class="field">
+            <div class="two fields">
+              <!-- <div class="field">
                 <label>Email</label>
                 <div class="ui transparent input">
                   <input name="name" type="text">
                 </div>
-              </div>
+              </div> -->
 
               <div class="field">
-                <label>Data</label>
-                <div class="ui transparent input">
-                  <input name="datanasc" type="text">
+                  <label>Data</label>
+                  <div class="ui transparent input">
+                  <input id="datePicker"  type="date" name="day" id="day" required>
+                  </div>
                 </div>
-              </div>
-              <div class="field">
-                <label>Horário</label>
-                <select class="ui dropdown" name="gender">
+                
+                <div class="field">
+                  <label>Horário</label>
+                  <select class="ui dropdown" name="hour" id="hour" require>
 
-                  <option> 12:00</option>
-                  <option> 15:00</option>
-                  <option> 16:00</option>
-                  <option> 17:00</option>
+                    <option> 12:00</option>
+                    <option> 15:00</option>
+                    <option> 16:00</option>
+                    <option> 17:00</option>
 
-                </select>
+                  </select>
 
 
               </div>
@@ -575,7 +575,7 @@
                 </div>
               </div>-->
 
-            <div class="ui primary submit button">Finalizar Agendamento</div>
+            <button type="submit" class="ui primary submit button">Finalizar Agendamento</button>
             <div class="ui error message"></div>
           </form>
 
@@ -586,34 +586,34 @@
           <form class="ui form segment">
             <h1 id="title-1">Pedido de digitalização</h1>
             <br>
-            <div class="three fields">
-              <div class="field">
+            <div class="two fields">
+              <!-- <div class="field">
                 <label>Nome</label>
                 <div class="ui transparent input">
                   <input name="name" type="text">
                 </div>
-              </div>
+              </div> -->
 
               <div class="field">
-                <label>Instituição</label>
-                <div class="ui transparent input">
-                  <input placeholder="bleble" name="username" type="text">
+                  <label>Instituição</label>
+                  <div class="ui transparent input">
+                    <input placeholder="Instituiçao" name="institution" id="institution" type="text">
+                  </div>
                 </div>
-              </div>
 
-              <div class="field">
-                <label>Profissão</label>
-                <div class="ui transparent input">
-                  <input name="password" type="password">
+                <div class="field">
+                  <label>Profissão</label>
+                  <div class="ui transparent input">
+                    <input name="profession" id="profession" type="text">
+                  </div>
                 </div>
-              </div>
 
             </div>
             <div class="three fields">
 
               <div class="field">
                 <label>Estado</label>
-                <select class="ui dropdown" name="gender">
+                <select class="ui dropdown" name="state">
                   <option> Acre - AC</option>
                   <option> Alagoas - AL</option>
                   <option> Amapá - AP</option>
@@ -647,44 +647,44 @@
               </div>
 
               <div class="field">
-                <label>Cidade</label>
-                <select class="ui dropdown" name="gender">
-                  <option value="">Cidade</option>
-                  <option value="male">Manaus</option>
-                  <option value="female">Belo Horizonte</option>
-                </select>
-              </div>
-
-              <div class="field">
-                <label>Telefone</label>
-                <div class="ui transparent input">
-                  <input name="telefone" type="text">
+                  <label>Cidade</label>
+                  <div class="ui transparent input">
+                    <input name="city" id="city" type="text">
+                  </div>
+                  
                 </div>
-                <small id="description-pequena" class="form-text text-muted"
-                  style="font-family: Montserrat, sans-serif">Inserir DDD. Ex: 92992007890</small>
-              </div>
+
+                <div class="field">
+                  <label>Telefone</label>
+                  <div class="ui transparent input">
+                    <input name="cellphone" id="cellphone" type="text" require>
+                  </div>
+                  <small id="description-pequena" class="form-text text-muted"
+                    style="font-family: Montserrat, sans-serif">Inserir DDD. Ex: 92992007890</small>
+                </div>
 
 
             </div>
 
 
-            <div class="three fields">
-              <div class="field">
+            <div class="two fields">
+              <!-- <div class="field">
                 <label>Email</label>
                 <div class="ui transparent input">
                   <input name="name" type="text">
                 </div>
-              </div>
+              </div> -->
 
               <div class="field">
-                <label>Data</label>
-                <div class="ui transparent input">
-                  <input name="datanasc" type="text">
+                  <label>Data</label>
+                  <div class="ui transparent input">
+                  <input id="datePicker"  type="date" name="day" id="day" required>
+                  </div>
                 </div>
-              </div>
+
               <div class="field">
                 <label>Horário</label>
-                <select class="ui dropdown" name="gender">
+                <select class="ui dropdown" name="hour" id="hour" require>
 
                   <option> 12:00</option>
                   <option> 15:00</option>
@@ -700,7 +700,7 @@
 
             <div class="field">
               <label>Finalidade</label>
-              <textarea class="form-control" id="text-pesquisa" rows="4"></textarea>
+              <textarea class="form-control" id="obs" name="obs" rows="4"></textarea>
               <small id="description-pequena" class="form-text text-muted"
                 style="font-family: Montserrat, sans-serif">Inserir neste campo a finalidade da sua pesquisa. Ex: "Esta
                 pesquisa é para o meu mestrado em..."</small>
@@ -710,26 +710,21 @@
               <div class="field">
                 <label>Titulo</label>
                 <div class="ui transparent input">
-                  <input name="name" type="text">
+                  <input name="title" type="text">
                 </div>
               </div>
 
               <div class="field">
                 <label>Autor</label>
                 <div class="ui transparent input">
-                  <input name="datanasc" type="text">
+                  <input name="autor" type="text">
                 </div>
               </div>
               <div class="field">
                 <label>Ano</label>
-                <select class="ui dropdown" name="gender">
-
-                  <option> 12:00</option>
-                  <option> 15:00</option>
-                  <option> 16:00</option>
-                  <option> 17:00</option>
-
-                </select>
+                <div class="ui transparent input">
+                  <input name="year" type="text">
+                </div>
 
 
               </div>
@@ -754,7 +749,7 @@
               </div>
             </div>-->
 
-            <div class="ui primary submit button">Finalizar Agendamento</div>
+            <button type="submit" class="ui primary submit button">Finalizar Agendamento</button >
 
             <div class="ui error message"></div>
         </section>
